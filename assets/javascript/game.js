@@ -18,7 +18,7 @@ function all(){
 	$("button").on("click", function clicked() {
 
 		var it = $(this).attr("id");
-		var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + it + "&api_key=slH3G7Y5Q8II7nD8yUF1iGfmKRMvqQVL&limit=10";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + it + "&api_key=slH3G7Y5Q8II7nD8yUF1iGfmKRMvqQVL&limit=10";
 	
 
 		$.ajax({
@@ -57,7 +57,7 @@ function all(){
 				animalImage.attr("data-animate",results[j].images.fixed_height.url)
 
 				animalImage.attr("data-state","still");
-				
+
 				console.log(animalImage);
 
 				gifDiv.prepend(p);
